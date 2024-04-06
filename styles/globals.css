@@ -1,0 +1,30 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+
+@layer components {
+  .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+  }
+}
+
+.otp-container{
+  @apply flex justify-between gap-3;
+}
+
+.otp-container input{
+  @apply !mr-0 flex-1 py-5 outline-none;
+}
+
+.react-tel-imput .form-control {
+  @apply !w-full py-6 !text-base;
+}
+
